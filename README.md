@@ -33,7 +33,8 @@ pip install -r requirements.txt
 ```
 
 4. Create a .env file with your Google API keys.
-
+```bash
+```
 5. Run the app:
 
 ```bash
