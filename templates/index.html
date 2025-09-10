@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Telecom Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="welcome-screen">
+            <h1>Welcome to the <span class="highlight">Call Center</span></h1>
+            <button id="start-chat-btn" class="start-chat-btn">Start Chat</button>
+        </div>
+
+        <!-- Chat Screen (Initially Hidden) -->
+        <div id="chat-screen" class="chat-screen" style="display: none;">
+            <div id="chat-box" class="chat-box">
+                <div id="chat-history" class="chat-history"></div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="user-input" placeholder="Ask a question..." class="chat-input">
+                <button id="send-btn" class="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
